@@ -1,30 +1,33 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-// Variables for upperCase, lowerCase, Numbers, and Special Characters
-var upperCase = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-var lowerCase = ["abcdefghijklmnopqrstuvwxyz"];
-var numbers = ["0123456789"];
-var specialCharacters = ["!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"];
+// Alert to press the button to begin
+(alert ("To BEGIN - PRESS 'Generate Password' 😄                                            ***Press 🆗 to close this alert***"));
+
 
 // Function to click the button to begin to process
 function generatePassword () {
   // Open Console to see:
   console.log ("You Touched the Button!");
 
-  
+  // 1. Password Length
+  var passwordLength = prompt("How many characters would you like your password to have?");
+    if (passwordLength < 8 || passwordLength > 128) {
+        prompt("Uh, Oh! Your password must be between 8 and 128 characters.       Sorry, please try again. 😖");
+        return;
+        
+}
 
-
-  alert ("To Begin, Press OK");
-  alert ("Password must be between 8 and 128 characters");
-  if (passwordLength < 8 || passwordLength > 128) {
+// 2. Variables for upperCase, lowerCase, Numbers, and Special Characters
+var upperCase = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+var lowerCase = ["abcdefghijklmnopqrstuvwxyz"];
+var numbers = ["0123456789"];
+var specialCharacters = ["!#$%&'()*+,-./:;<=>?@[\\]_`{|}~"];
 		
-	}
 
 
-//   1 - prompt the user for the password criteria
-//   A - password length 8 <128
-//  B- lowercase, uppercase, numbers, special characters
+//   
+//  
 // 2 - validate the input
 // 3 generate password based on criteria
 
@@ -35,7 +38,7 @@ function generatePassword () {
 
 
   // Display the generated password to the page
-  return "Final Password";
+  return "final password";
 }
 
 // Write password to the #password input
