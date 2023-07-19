@@ -61,8 +61,6 @@ function generatePassword () {
 
 
 
-
-
   if (!lowerOnly && !upperOnly && !numOnly && !specialOnly) {
     alert ("Uh, Oh! \nYou must click '🆗' for atleast one of the previous prompts. \nSorry, please try again. 😖");
     return "Remember to select '🆗' for atleast one of the prompts. 😊";
@@ -77,11 +75,11 @@ function generatePassword () {
         choiceRandomArr = choiceRandomArr.concat(upperCase);
       }
 
-      if (num === true) {
+      if (numOnly === true) {
         choiceRandomArr = choiceRandomArr.concat(numbers);
       }
 
-      if (special === true) {
+      if (specialOnly === true) {
         choiceRandomArr = choiceRandomArr.concat(specialCharacters);
       }
 
