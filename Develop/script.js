@@ -43,7 +43,7 @@ function generatePassword () {
   if (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) {
     alert ("Uh, Oh! \nYou must choose an integer/number value between 8 and 128. \nSorry, please try again. 😖");
     var passwordLength = prompt ("Please choose a number between 8 and 128.😊");
-    return;
+    // return;
 };
 
 
@@ -61,7 +61,9 @@ function generatePassword () {
   specialOnly = confirm(special);
 
 	
-
+  if (!lowerOnly && !upperOnly && !numOnly && !specialOnly) {
+    alert ("Uh, Oh! \nYou must click '🆗' for atleast one of the previous prompts. \nSorry, please try again. 😖");
+  }
 
 
 
