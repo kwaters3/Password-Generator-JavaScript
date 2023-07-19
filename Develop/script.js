@@ -85,7 +85,12 @@ function generatePassword () {
   }
 
 
-
+// Looping the password
+for (var i = 0; i < passwordLength; i++)
+    finalPassword += choiceRandomArr[Math.floor(Math.random() * choiceRandomArr.length)];
+  // This return will display the final password
+  return finalPassword;
+}
 
 
   // Display the generated password to the page
