@@ -30,15 +30,12 @@ var specialCharacters = ["!","#","$","%","&","(",")", "*","+","-",".","/", ":","
 // Function to click the button to begin to process
 function generatePassword () {
 
-  // This is used to validate the input for the final password
+// This is used to validate the input for the final password
   var finalPassword = "";
-  var choiceRandom = [];
+  var choiceRandomArr = [];
 
 // Open Console to see:
   console.log ("You Touched the Button!");
-
-// This is used to validate the input for the final password
-  var password = "";
 
 
 //  Password Length
@@ -47,16 +44,23 @@ function generatePassword () {
     alert ("Uh, Oh! \nYou must choose an integer/number value between 8 and 128. \nSorry, please try again. 😖");
     var passwordLength = prompt ("Please choose a number between 8 and 128.😊");
     return;
-}
+};
+
 
 // Prompts for Lowercase, Uppercase, Numbers, Special Characters
-  var lower = confirm ("Do you want to include lower case 🔡 letters in your password? \nselect 'OK' for YES or 'CANCEL' for NO");
-  var upper = confirm ("Do you want to include UPPER case 🔠 letters in your password? \nselect 'OK' for YES or 'CANCEL' for NO");
-  var num = confirm ("Do you want to include Numbers 🔢 in your password? \nselect 'OK' for YES or 'CANCEL' for NO");
-  var special = confirm ("Do you want to include Special characters 🔣 in your password? \nselect 'OK' for YES or 'CANCEL' for NO");
+  var lower = "Do you want to include lower case 🔡 letters in your password? \nselect 'OK' for YES or 'CANCEL' for NO";
+  lowerOnly = confirm(lower);
 
+  var upper = "Do you want to include UPPER case 🔠 letters in your password? \nselect 'OK' for YES or 'CANCEL' for NO";
+  upperOnly = confirm(upper);
 
-		
+  var num = "Do you want to include Numbers 🔢 in your password? \nselect 'OK' for YES or 'CANCEL' for NO";
+  numOnly = confirm(num);
+
+  var special = "Do you want to include Special characters 🔣 in your password? \nselect 'OK' for YES or 'CANCEL' for NO";
+  specialOnly = confirm(special);
+
+	
 
 
 
