@@ -65,6 +65,24 @@ function generatePassword () {
     alert ("Uh, Oh! \nYou must click '🆗' for atleast one of the previous prompts. \nSorry, please try again. 😖");
   }
 
+  else {
+    if (lowerOnly === true) {
+      choiceRandomArr = choiceRandomArr.concat(lowerCase);
+    }
+
+    if (upperOnly === true) {
+      choiceRandomArr = choiceRandomArr.concat(upperCase);
+    }
+
+    if (num === true) {
+      choiceRandomArr = choiceRandomArr.concat(numbers);
+    }
+
+    if (special === true) {
+      choiceRandomArr = choiceRandomArr.concat(specialCharacters);
+    }
+
+  }
 
 
 
