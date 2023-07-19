@@ -42,8 +42,7 @@ function generatePassword () {
   var passwordLength = prompt("To begin the process, please specify the amount of characters you want in your password?");
   if (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) {
     alert ("Uh, Oh! \nYou must choose an integer/number value between 8 and 128. \nSorry, please try again. 😖");
-    var passwordLength = prompt ("Please choose a number between 8 and 128.😊");
-    return;
+    return "Please start over by choosing a number between 8 and 128.😊";
 };
 
 
@@ -66,6 +65,7 @@ function generatePassword () {
 
   if (!lowerOnly && !upperOnly && !numOnly && !specialOnly) {
     alert ("Uh, Oh! \nYou must click '🆗' for atleast one of the previous prompts. \nSorry, please try again. 😖");
+    return "Remember to select '🆗' for atleast one of the prompts. 😊";
   }
 
     else {
