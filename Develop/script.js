@@ -43,7 +43,7 @@ function generatePassword () {
   if (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) {
     alert ("Uh, Oh! \nYou must choose an integer/number value between 8 and 128. \nSorry, please try again. 😖");
     var passwordLength = prompt ("Please choose a number between 8 and 128.😊");
-    // return;
+    return;
 };
 
 
@@ -60,29 +60,33 @@ function generatePassword () {
   var special = "Do you want to include Special characters 🔣 in your password? \nselect 'OK' for YES or 'CANCEL' for NO";
   specialOnly = confirm(special);
 
-	
+
+
+
+
   if (!lowerOnly && !upperOnly && !numOnly && !specialOnly) {
     alert ("Uh, Oh! \nYou must click '🆗' for atleast one of the previous prompts. \nSorry, please try again. 😖");
   }
 
-  else {
-    if (lowerOnly === true) {
-      choiceRandomArr = choiceRandomArr.concat(lowerCase);
+    else {
+      if (lowerOnly === true) {
+        choiceRandomArr = choiceRandomArr.concat(lowerCase);
+      }
+
+      if (upperOnly === true) {
+        choiceRandomArr = choiceRandomArr.concat(upperCase);
+      }
+
+      if (num === true) {
+        choiceRandomArr = choiceRandomArr.concat(numbers);
+      }
+
+      if (special === true) {
+        choiceRandomArr = choiceRandomArr.concat(specialCharacters);
+      }
+
     }
 
-    if (upperOnly === true) {
-      choiceRandomArr = choiceRandomArr.concat(upperCase);
-    }
-
-    if (num === true) {
-      choiceRandomArr = choiceRandomArr.concat(numbers);
-    }
-
-    if (special === true) {
-      choiceRandomArr = choiceRandomArr.concat(specialCharacters);
-    }
-
-  }
 
 
 // Looping the password
@@ -91,10 +95,4 @@ for (var i = 0; i < passwordLength; i++)
   // This return will display the final password
   return finalPassword;
 }
-
-
-  // Display the generated password to the page
-  return finalPassword;
-}
-
 
