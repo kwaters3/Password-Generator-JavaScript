@@ -30,7 +30,7 @@ THEN the password is either displayed in an alert or written to the page
 ```
 
 <!-- Website link -->
-[Click here to see the result]
+[Click here to see the result](https://kwaters3.github.io/Password-Generator-JavaScript/)
 
 
 <!-- Screenshot -->
