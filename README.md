@@ -35,3 +35,14 @@ THEN the password is either displayed in an alert or written to the page
 
 <!-- Screenshot -->
 ![Screenshot](03-javascript-homework-demo.png)
+
+
+
+## Credits/References
+
+-[TraversyMedia](https://www.youtube.com/watch?v=hdI2bqOjy3c&list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX&index=2) Information Video on JavaScript
+-[TheNetNinja](https://www.youtube.com/watch?v=iWOYAxlnaww) Information Video on JavaScript
+-[W3Schools](https://www.w3schools.com/charsets/ref_emoji.asp) Emojis used in JavaScript
+-[W3Schools](https://www.w3schools.com/js/default.asp) Information on JavaScript 
+-[TutorialsTeacher] (https://www.tutorialsteacher.com/javascript/javascript-if-else-condition) Reviewed/referenced info on if - else statements for JavaScript
+-[GeeksforGeeks](https://www.geeksforgeeks.org/swift-nested-if-else-statement/?ref=lbp) Reviewed/referenced info on if - else statements for JavaScript
