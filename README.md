@@ -29,8 +29,9 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
 
-
+<!-- Website link -->
+[Click here to see the result]
 
 
 <!-- Screenshot -->
-![Screenshot](Assets/03-javascript-homework-demo.png)
+![Screenshot](Develop/03-javascript-homework-demo.png)
